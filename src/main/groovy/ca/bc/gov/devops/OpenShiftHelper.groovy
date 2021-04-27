@@ -295,7 +295,7 @@ class OpenShiftHelper{
     }
 
     public static Map loadTemplateAsJson(String file){
-        List _args = ['oc', 'create', '-f', file, '--dry-run', '-o', 'json']
+        List _args = ['oc', 'create', '-f', file, '--dry-run=client', '-o', 'json']
 
         Map ret = _exec(_args, new StringBuffer(), new StringBuffer())
 
