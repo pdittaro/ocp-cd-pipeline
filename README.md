@@ -58,7 +58,7 @@ Create a config file using Groovy [ConfigSlurper](http://docs.groovy-lang.org/la
 # OCP_CD_PIPELINE_DIR
 
 cd $MY_APP_DIR
-groovy -cp target/ocp-pipeline-0.0.4.jar  'jar:file:target/ocp-pipeline-0.0.4.jar!/example/build.groovy'
+groovy -cp target/ocp-pipeline-0.0.8.jar  'jar:file:target/ocp-pipeline-0.0.8.jar!/example/build.groovy'
 
 groovy -cp $OCP_CD_PIPELINE_DIR/src/main/groovy/ $OCP_CD_PIPELINE_DIR/src/main/groovy/example/build.groovy --config=openshift/config.groovy
 ```
